@@ -1,0 +1,2 @@
+rootProject.name='KsSolutions'
+include ':app'

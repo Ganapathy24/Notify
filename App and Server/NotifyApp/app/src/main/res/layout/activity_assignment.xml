@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="Assignment"
+    android:background="@color/Background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:fontFamily="@font/adamina"
+        android:gravity="center_horizontal"
+        android:text="Work Assignment"
+        android:padding="4dp"
+        android:elevation="20dp"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/text_border"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <EditText
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Work ID"
+            android:inputType="number"
+            android:textSize="20dp"
+            android:id="@+id/workid"/>
+        <EditText
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="text"
+            android:hint="Activity Name"
+            android:textSize="20dp"
+            android:id="@+id/newWork"/>
+        <EditText
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint = "Planned Time"
+            android:inputType="date"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="20dp"
+            android:id="@+id/newTime"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="Remarks"
+            android:inputType="text"
+            android:textSize="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/newRemarks"/>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:elevation="10dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_xml"
+            android:layout_gravity="center"
+            android:layout_height="50dp">
+        <Button
+            android:layout_width="match_parent"
+            android:text="Submit"
+            android:background="@drawable/button_border"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:id="@+id/Assign"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

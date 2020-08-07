@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Authentication">
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:text="Change Password"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_margin="20dp"
+            android:inputType="textPassword"
+            android:hint = "Enter Old Password"
+            android:gravity="center"
+            android:id="@+id/oldpass"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:fontFamily="@font/adamina"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="50dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/adamina"
+            android:gravity="center"
+            android:hint="Enter New Password"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:id="@+id/newpass1"
+            android:layout_margin="20dp"
+            />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/adamina"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:hint="Enter Confirm New Password"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:id="@+id/newpass2"
+            android:layout_margin="20dp"
+            />
+        <LinearLayout
+            android:background="@drawable/button_xml"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:textColor="#FFFF"
+                android:background="@drawable/button_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/summit"
+                android:text="Submit"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

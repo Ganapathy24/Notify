@@ -1,0 +1,10 @@
+django
+gunicorn
+django-heroku
+datetime
+dj-database-url
+dj-static
+python-decouple
+Unipath
+mysqlclient
+django-cors-headers

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/Background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:elevation="20dp"
+        android:background="@drawable/button_xml"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="Notify"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/adamina"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:background="@drawable/text_border"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/adamina"
+                        android:gravity="center"
+                        android:text="Login Page"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="80px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text = "Username"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textSize="50px"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="115dp"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/username"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="115dp"
+                        android:text = "Password"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:textSize="50px"
+                        android:layout_height="match_parent"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/password"
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:elevation="10dp"
+                    android:layout_margin="11dp"
+                    android:background="@drawable/passborde"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/forget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/passbutton"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Forget the password?"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/adamina"
+                        android:textSize="13sp"
+                        android:layout_gravity="right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:elevation="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_xml">
+
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/button_border"
+                        android:text="Submit"
+                        android:fontFamily="@font/adamina"
+                        android:textStyle="bold"
+                        android:textColor="#FFF" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/passborde"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/registeration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/passbutton"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="New User? Click to Register"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/adamina"
+                        android:textSize="13sp"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

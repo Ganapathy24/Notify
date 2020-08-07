@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:label="WORKS"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Background"
+    android:layout_gravity="center"
+    tools:context=".DateWise_Activity">
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_width="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_width="match_parent"
+                android:gravity = "center"
+                android:id="@+id/activities"
+                android:clickable="true"
+                />
+                <LinearLayout
+                    android:id="@+id/buttonLayout"
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:elevation="20dp"
+                    android:background="@drawable/button_xml"
+                    android:layout_margin="10dp"
+                    android:layout_height="50dp">
+                    <Button
+                        android:id="@+id/submission"
+                        android:background="@drawable/button_border"
+                        android:textColor="#ffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Submit" />
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
+

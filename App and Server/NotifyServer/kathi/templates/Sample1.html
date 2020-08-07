@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Sample page</title>
+</head>
+
+<body>
+    <p>Hello makkale just a sample page.</p><br>
+    <label>Enter your name: </label>
+    <input type="text" placeholder="Enter your name.." id="name"><br>
+    <input type="button" value="Login" id="loginbtn" onclick="login()"><br>
+    <label id='nametext'>Hello</label>
+</body>
+
+</html>
+
+<script>
+    function login() {
+        var name = document.getElementById('name').value;
+        document.getElementById('nametext').innerText = "Hello " + name;
+    }
+</script>
